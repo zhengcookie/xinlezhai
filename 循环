@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta charset="utf-8">
+	<meta name="欢迎光临我的主页！">
+	<meta name="这里有你们想要的吗？">
+	<title>辛 楽 斋 的 学 习 圈</title>
+	<style>
+ 		"white-space: pre-line"
+
+  	</style>
+	<script type="text/javascript">
+		document.write("hello!web");
+	</script>
+</head>
+<body>
+    <div style=
+    "
+    text-align: center;
+    padding: 40px;"
+    >
+    <img src="star.bmp" alt="辛楽斋" width="150px" height="150px">
+    </div>
+    <div style=
+    "max-width:700px;
+     margin: 30px auto;
+     padding: 15px;
+     line-height: 1.7;"
+     >
+	<h1 style="text-align: center">前言</h1>
+	       <h1>什么是循环？</h1>
+		<p>/* 多个for循环的问题考究 */</p>
+		<p>#include <stdio.h> </p>
+		<p>int main()</p>
+		<p>{</p>
+			<p>int i;</p>
+			<p>int j;</p>
+			<p>for (i=1; i<10; i++)		//1.i=1 1-9<10 3.</p>
+			<p>{</p>
+				<p>{</p>
+					<p>for (j=1; j < i+1; j++)	//2.j=1,1<2到10,</p>
+					<p>printf("%d*%d=%d\t",j,i,i*j);//3.1*1=1 1*2=2</p>
+				<p>}</p> 
+				<P>printf("\n");</p> 
+			<p>}</p>
+			
+			
+			<p>return 0;</p>
+		<p>}</p>
+		<p>/*</p>
+		<p>dev c++输出结果：</p> 
+		<p>1*1=1</p>
+		<p>1*2=2   2*2=4</p>
+		<p>1*3=3   2*3=6   3*3=9</p>
+		<p>1*4=4   2*4=8   3*4=12  4*4=16</p>
+		<p>1*5=5   2*5=10  3*5=15  4*5=20  5*5=25</p>
+		<p>1*6=6   2*6=12  3*6=18  4*6=24  5*6=30  6*6=36</p>
+		<p>1*7=7   2*7=14  3*7=21  4*7=28  5*7=35  6*7=42  7*7=49</p>
+		<p>1*8=8   2*8=16  3*8=24  4*8=32  5*8=40  6*8=48  7*8=56  8*8=64</p>
+		<p>1*9=9   2*9=18  3*9=27  4*9=36  5*9=45  6*9=54  7*9=63  8*9=72  9*9=81</p>
+			<p>总结：对于c语言来说，for循环中嵌套循环的输出结果，</p>
+			<p>先执行一遍外层的for循环，然后进入内部循环，当内部循环不成立时再来执行外部循环。</p>
+			<p>当这层循环不成立时，跳出这层循环。如果还有循环就再度进行判断，否则跳出所有循环 </p>
+			<p>为什么内置循环时i+1，因为循环的最后结果i=1-9，那么j索引值就为1-8。</p>
+			<p>j<10也是错误的，这样的话就会让i在每一段都执行9遍 </p>
+			<p>使用i+1的逻辑就如下： </p>
+			<p>i = 1,i < 10</p>
+			<p>j = 1,j < 2</p>
+			<p>1 * 1 = 1</p>
+			<p></p>
+			<p>i = 2,i < 10</p>
+			<p>j = 1,j < 3</p>
+			<p>j = 2,j < 3</p>
+			<p></p>
+			<p>1 * 2 = 2	2 * 2 = 4</p>
+			<p></p>
+			<p>i = 3,i < 10</p>
+			<p>j = 1,j < 4</p>
+			<p>j = 2,j < 4</p>
+			<p>j = 3,j < 4</p>
+			
+			<p>1 * 3 = 3	2 * 3 = 6	3 * 3 = 6</p>
+			<p></p>
+			<p>使用j < 10的逻辑就如下： </p>
+			<p>i = 1, i < 10</p>
+			<p>j = 1, j < 10</p>
+			<p>j = 2, j < 10</p>
+			<p>1 * 1 = 1</p>
+			<p>1 * 2 = 2</p>
+			<p>.........</p>
+			<p>i = 2, i < 10</p>
+			<p>j = 1, j < 10</p>
+			<p>j = 2, j < 10</p>
+			<p>2 * 1 = 2</p>
+			<p>2 * 2 = 4</p>
+			
+			<p>...........</>
+		<p>*/ </>
+  		</p>
+	<a href="https://zhengcookie.github.io/xinlezhai/进制.html">下一页</a>
+    </div>
+    <div style=
+    "
+    text-align: center;
+    padding: 40px;
+    font-size: 12px;"
+    >
+    <p>我的网站</p>
+    <a href="https://zhengcookie.github.io/xinlezhai/">"友情链接"</a>
+    </div>
+</body>
+</html>
